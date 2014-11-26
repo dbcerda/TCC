@@ -1,0 +1,7 @@
+C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContent\bin\PSM\Content\stuff\SmileyWalk.xnb
+C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContent\bin\PSM\IgnoreMe.dll
+C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContent\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContent\obj\PSM\IgnoreMe.dll
+C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContent\bin\PSM\Content\stuff\fighter1.xnb
+C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContent\obj\PSM\TeeGeeContent.csprojResolveAssemblyReference.cache
+C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContent\bin\PSM\Content\stuff\fighter2.xnb

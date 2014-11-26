@@ -1,0 +1,3 @@
+Content\stuff\SmileyWalk.xnb
+Content\stuff\fighter1.xnb
+Content\stuff\fighter2.xnb
