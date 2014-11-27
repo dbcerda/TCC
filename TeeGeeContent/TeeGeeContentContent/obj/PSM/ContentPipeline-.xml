@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContent\bin\PSM\Content\stuff\fighter1.xnb</Output>
+      <Output>C:\Users\Diogo\Dropbox\TCC\TCC\TeeGeeContent\TeeGeeContent\bin\PSM\Content\stuff\fighter1.xnb</Output>
       <Time>2014-11-26T04:40:28.3061678-02:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContent\bin\PSM\Content\stuff\fighter2.xnb</Output>
+      <Output>C:\Users\Diogo\Dropbox\TCC\TCC\TeeGeeContent\TeeGeeContent\bin\PSM\Content\stuff\fighter2.xnb</Output>
       <Time>2014-11-26T08:42:23.4924621-02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -26,10 +26,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>PSM</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContentContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContent\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContentContent\obj\PSM\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContent\bin\PSM\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Diogo\Dropbox\TCC\TCC\TeeGeeContent\TeeGeeContentContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Diogo\Dropbox\TCC\TCC\TeeGeeContent\TeeGeeContent\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Diogo\Dropbox\TCC\TCC\TeeGeeContent\TeeGeeContentContent\obj\PSM\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Diogo\Dropbox\TCC\TCC\TeeGeeContent\TeeGeeContent\bin\PSM\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

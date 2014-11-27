@@ -10,3 +10,9 @@ D:\Projects\CerdaTCC\TeeGeeContent\TeeGeeContent\bin\PSM\IgnoreMe.dll
 D:\Projects\CerdaTCC\TeeGeeContent\TeeGeeContent\obj\PSM\TeeGeeContent.csprojResolveAssemblyReference.cache
 D:\Projects\CerdaTCC\TeeGeeContent\TeeGeeContent\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
 D:\Projects\CerdaTCC\TeeGeeContent\TeeGeeContent\obj\PSM\IgnoreMe.dll
+C:\Users\Diogo\Dropbox\TCC\TCC\TeeGeeContent\TeeGeeContent\bin\PSM\Content\stuff\fighter1.xnb
+C:\Users\Diogo\Dropbox\TCC\TCC\TeeGeeContent\TeeGeeContent\bin\PSM\Content\stuff\fighter2.xnb
+C:\Users\Diogo\Dropbox\TCC\TCC\TeeGeeContent\TeeGeeContent\bin\PSM\IgnoreMe.dll
+C:\Users\Diogo\Dropbox\TCC\TCC\TeeGeeContent\TeeGeeContent\obj\PSM\TeeGeeContent.csprojResolveAssemblyReference.cache
+C:\Users\Diogo\Dropbox\TCC\TCC\TeeGeeContent\TeeGeeContent\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Diogo\Dropbox\TCC\TCC\TeeGeeContent\TeeGeeContent\obj\PSM\IgnoreMe.dll
