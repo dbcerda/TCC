@@ -6,23 +6,21 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Microsoft.Xna.Framework;
-using TeeGee;
 
-namespace TeeGeeForm
+namespace TeeGeeSim
 {
-    public partial class Form1 : Form
+    public partial class SimForm : Form
     {
         public Game1 game;
- 
-        public Form1()
+
+        public SimForm()
         {
             InitializeComponent();
         }
 
-        private void fecharToolStripMenuItem_Click(object sender, EventArgs e)
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
     }
 }

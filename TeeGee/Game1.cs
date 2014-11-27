@@ -27,24 +27,47 @@ namespace TeeGee
         private Viewport original;
         private IntPtr _drawSurface;
         private Form _parentForm;
-        private PictureBox _surfacePictureBox;
+        private PictureBox _pictureBox;
+        private Control _gameForm;
 
         public Game1(IntPtr drawSurface, Form parentForm, PictureBox surfacePictureBox)
         {
             _drawSurface = drawSurface;
             _parentForm = parentForm;
-            _surfacePictureBox = surfacePictureBox;            
+            _pictureBox = surfacePictureBox;            
             graphics = new GraphicsDeviceManager(this);            
             Content.RootDirectory = "Content";
 
             graphics.PreparingDeviceSettings += new EventHandler<PreparingDeviceSettingsEventArgs>(graphics_PreparingDeviceSettings);
             Mouse.WindowHandle = _drawSurface;
+
+            //_gameForm = Control.FromHandle(this.Window.Handle);
+            //_gameForm.VisibleChanged += new EventHandler(gameForm_VisibleChanged);
+            //_gameForm.SizeChanged += new EventHandler(pictureBox_SizeChanged);
+        }
+
+        private void gameForm_VisibleChanged(object sender, EventArgs e)
+        {
+            if (_gameForm.Visible == true)
+                _gameForm.Visible = false;
         }
 
         private void graphics_PreparingDeviceSettings(Object sender, PreparingDeviceSettingsEventArgs evt)
         {
             evt.GraphicsDeviceInformation.PresentationParameters.DeviceWindowHandle = _drawSurface;
 
+        }
+
+        void pictureBox_SizeChanged(object sender, EventArgs e)
+        {
+            if (_parentForm.WindowState != System.Windows.Forms.FormWindowState.Minimized)
+            {
+                graphics.PreferredBackBufferWidth = _pictureBox.Width;
+                graphics.PreferredBackBufferHeight = _pictureBox.Height;
+                //Camera.ViewPortWidth = _pictureBox.Width;
+                //Camera.ViewPortHeight = _pictureBox.Height;
+                graphics.ApplyChanges();
+            }
         }
 
         /// <summary>
@@ -109,7 +132,7 @@ namespace TeeGee
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == Microsoft.Xna.Framework.Input.ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Escape))
                 Exit();
 
             //Game A update
