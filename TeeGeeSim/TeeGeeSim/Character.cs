@@ -9,22 +9,29 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Storage;
 using Microsoft.Xna.Framework.GamerServices;
 
-namespace TeeGee
+
+namespace TeeGeeSim
 {
-    class GameManager
-    {        
-        private Rectangle viewArea;
-        private Character characterA;
-        private Character characterB;
+    class Character
+    {
+        public Vector2 position;
 
-        public GameManager()
+        public Character()
         {
 
         }
 
-        private void Draw()
+        public void punch() 
         {
-
         }
+
+        public void block()
+        {
+        }
+
+        public void takeDamage()
+        {
+        }
+
     }
 }

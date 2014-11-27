@@ -5,13 +5,14 @@ using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 
-namespace TeeGee
+namespace TeeGeeSim
 {
     class AnimatedSprite
     {
         public Texture2D Texture { get; set; }
         public int Rows { get; set; }
         public int Columns { get; set; }
+        public bool loop;
         private int currentFrame;
         private int totalFrames;
 
@@ -22,6 +23,12 @@ namespace TeeGee
             Columns = columns;
             currentFrame = 0;
             totalFrames = Rows * Columns;
+        }
+
+        
+        public AnimatedSprite()
+        {
+
         }
 
         public void Update()

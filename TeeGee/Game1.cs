@@ -21,10 +21,6 @@ namespace TeeGee
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        private AnimatedSprite animatedSprite;
-        private Viewport leftViewport;
-        private Viewport rightViewport;
-        private Viewport original;
         private IntPtr _drawSurface;
         private Form _parentForm;
         private PictureBox _pictureBox;
@@ -44,6 +40,7 @@ namespace TeeGee
             //_gameForm = Control.FromHandle(this.Window.Handle);
             //_gameForm.VisibleChanged += new EventHandler(gameForm_VisibleChanged);
             //_gameForm.SizeChanged += new EventHandler(pictureBox_SizeChanged);
+
         }
 
         private void gameForm_VisibleChanged(object sender, EventArgs e)
@@ -82,22 +79,6 @@ namespace TeeGee
 
             this.IsMouseVisible = true;
 
-            leftViewport = new Viewport();
-            leftViewport.X = 0;
-            leftViewport.Y = 0;
-            leftViewport.Width = 400;
-            leftViewport.Height = 480;
-            leftViewport.MinDepth = 0;
-            leftViewport.MaxDepth = 1;
-
-            rightViewport = new Viewport();
-            rightViewport.X = 400;
-            rightViewport.Y = 0;
-            rightViewport.Width = 400;
-            rightViewport.Height = 480;
-            rightViewport.MinDepth = 0;
-            rightViewport.MaxDepth = 1;
-
             base.Initialize();
         }
 
@@ -109,9 +90,7 @@ namespace TeeGee
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            Texture2D texture = Content.Load<Texture2D>("Stuff/fighter2");
-            animatedSprite = new AnimatedSprite(texture, 1, 2);
+            
 
             // TODO: use this.Content to load your game content here
         }
@@ -135,10 +114,6 @@ namespace TeeGee
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == Microsoft.Xna.Framework.Input.ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Escape))
                 Exit();
 
-            //Game A update
-            animatedSprite.Update();
-
-            //Game B update
             base.Update(gameTime);
         }
 
@@ -149,17 +124,6 @@ namespace TeeGee
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-            original = graphics.GraphicsDevice.Viewport;
-
-            //Game A rendering
-            graphics.GraphicsDevice.Viewport = leftViewport;
-            animatedSprite.Draw(spriteBatch, new Vector2(100  , 200));            
-
-            //Game B rendering
-            graphics.GraphicsDevice.Viewport = rightViewport;
-            animatedSprite.Draw(spriteBatch, new Vector2(200, 200));
-
-            GraphicsDevice.Viewport = original;
             
             base.Draw(gameTime);
         }

@@ -40,6 +40,10 @@ namespace TeeGeeSim
             gameForm = Control.FromHandle(this.Window.Handle);
             gameForm.VisibleChanged += new EventHandler(gameForm_VisibleChanged);
             gameForm.SizeChanged += new EventHandler(pictureBox_SizeChanged);
+
+
+
+
         }
 
         private void gameForm_VisibleChanged(object sender, EventArgs e)
