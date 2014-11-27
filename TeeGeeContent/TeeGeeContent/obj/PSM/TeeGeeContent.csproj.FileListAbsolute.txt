@@ -4,8 +4,6 @@ C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGee
 C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContent\bin\PSM\Content\stuff\fighter1.xnb
 C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContent\obj\PSM\TeeGeeContent.csprojResolveAssemblyReference.cache
 C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContent\bin\PSM\Content\stuff\fighter2.xnb
-D:\Projects\CerdaTCC\TeeGeeContent\TeeGeeContent\bin\PSM\Content\stuff\fighter1.xnb
-D:\Projects\CerdaTCC\TeeGeeContent\TeeGeeContent\bin\PSM\Content\stuff\fighter2.xnb
 D:\Projects\CerdaTCC\TeeGeeContent\TeeGeeContent\bin\PSM\IgnoreMe.dll
 D:\Projects\CerdaTCC\TeeGeeContent\TeeGeeContent\obj\PSM\TeeGeeContent.csprojResolveAssemblyReference.cache
 D:\Projects\CerdaTCC\TeeGeeContent\TeeGeeContent\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt

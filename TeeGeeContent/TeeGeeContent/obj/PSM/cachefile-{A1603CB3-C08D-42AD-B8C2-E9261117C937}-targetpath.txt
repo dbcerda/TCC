@@ -1,2 +1,0 @@
-Content\stuff\fighter1.xnb
-Content\stuff\fighter2.xnb

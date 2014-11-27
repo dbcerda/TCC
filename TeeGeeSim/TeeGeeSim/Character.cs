@@ -12,9 +12,11 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace TeeGeeSim
 {
-    class Character
+    class Character : GameBehaviour
     {
         public Vector2 position;
+
+        List<Animation> animations;
 
         public Character()
         {

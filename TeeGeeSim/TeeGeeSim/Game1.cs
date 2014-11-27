@@ -24,6 +24,9 @@ namespace TeeGeeSim
         PictureBox pictureBox;
         Control gameForm;
 
+        GameManager gameMang1;
+        GameManager gameMang2;
+
         public Game1(IntPtr drawSurface, Form parentForm, PictureBox surfacePictureBox)
         {
             graphics = new GraphicsDeviceManager(this);
@@ -41,9 +44,8 @@ namespace TeeGeeSim
             gameForm.VisibleChanged += new EventHandler(gameForm_VisibleChanged);
             gameForm.SizeChanged += new EventHandler(pictureBox_SizeChanged);
 
-
-
-
+            gameMang1 = new GameManager(new Rectangle(0, 0, 300, 300), GraphicsDevice);
+            gameMang2 = new GameManager(new Rectangle(360, 0, 300, 300), GraphicsDevice);
         }
 
         private void gameForm_VisibleChanged(object sender, EventArgs e)
@@ -115,7 +117,8 @@ namespace TeeGeeSim
             //if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 //this.Exit();
 
-            // TODO: Add your update logic here
+            gameMang1.Update(gameTime);
+            gameMang2.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -128,7 +131,8 @@ namespace TeeGeeSim
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
+            gameMang1.Draw(gameTime, spriteBatch);
+            gameMang2.Draw(gameTime, spriteBatch);
 
             base.Draw(gameTime);
         }

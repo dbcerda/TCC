@@ -11,20 +11,32 @@ using Microsoft.Xna.Framework.GamerServices;
 
 namespace TeeGeeSim
 {
-    class GameManager
+    class GameManager : GameBehaviour
     {        
         private Rectangle viewArea;
         private Character characterA;
         private Character characterB;
+        private Texture2D bgTexture;
+        private Color bgColor;
 
-        public GameManager()
+        public GameManager(Rectangle viewArea, GraphicsDevice graphicsDevice)
         {
-
+            this.viewArea = viewArea;
+            characterA = new Character();
+            characterB = new Character();
+            AddChild(characterA);
+            AddChild(characterB);
+            bgTexture = new Texture2D(graphicsDevice, 1, 1);
+            bgTexture.SetData(new Color[] { Color.White });
+            bgColor = new Color(1, 1, 1);
         }
 
-        private void Draw()
+        public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-
+            base.Draw(gameTime, spriteBatch);
+            spriteBatch.Begin();
+            spriteBatch.Draw(bgTexture, viewArea, bgColor);
+            spriteBatch.End();
         }
     }
 }
