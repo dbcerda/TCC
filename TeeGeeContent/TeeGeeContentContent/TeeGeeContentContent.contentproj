@@ -48,13 +48,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="stuff\SmileyWalk.png">
-      <Name>SmileyWalk</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="stuff\fighter1.png">
       <Name>fighter1</Name>
       <Importer>TextureImporter</Importer>

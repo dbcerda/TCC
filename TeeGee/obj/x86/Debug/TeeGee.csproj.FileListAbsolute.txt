@@ -23,7 +23,6 @@ c:\users\diogo\documents\visual studio 2010\Projects\TeeGee\TeeGee\bin\Windows\D
 c:\users\diogo\documents\visual studio 2010\Projects\TeeGee\TeeGee\obj\x86\Debug\TeeGee.csprojResolveAssemblyReference.cache
 c:\users\diogo\documents\visual studio 2010\Projects\TeeGee\TeeGee\obj\x86\Debug\TeeGee.exe
 c:\users\diogo\documents\visual studio 2010\Projects\TeeGee\TeeGee\obj\x86\Debug\TeeGee.pdb
-C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGee\bin\Windows\Debug\Content\stuff\SmileyWalk.xnb
 C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGee\bin\Windows\Debug\IgnoreMe.dll
 C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGee\bin\Windows\Debug\Content\stuff\fighter1.xnb
 C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGee\bin\Windows\Debug\Content\stuff\fighter2.xnb

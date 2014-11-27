@@ -2,15 +2,6 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>stuff\SmileyWalk.png</Source>
-      <Name>stuff\SmileyWalk</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Diogo\documents\visual studio 2010\Projects\TeeGee\TeeGeeContent\TeeGeeContent\bin\PSM\Content\stuff\SmileyWalk.xnb</Output>
-      <Time>2014-11-19T22:52:59.2207081-02:00</Time>
-    </Item>
-    <Item>
       <Source>stuff\fighter1.png</Source>
       <Name>stuff\fighter1</Name>
       <Importer>TextureImporter</Importer>

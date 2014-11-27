@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Storage;
 using Microsoft.Xna.Framework.GamerServices;
+using System.Windows.Forms;
 #endregion
 
 namespace TeeGee
@@ -24,12 +25,26 @@ namespace TeeGee
         private Viewport leftViewport;
         private Viewport rightViewport;
         private Viewport original;
+        private IntPtr _drawSurface;
+        private Form _parentForm;
+        private PictureBox _surfacePictureBox;
 
-        public Game1()
-            : base()
+        public Game1(IntPtr drawSurface, Form parentForm, PictureBox surfacePictureBox)
         {
-            graphics = new GraphicsDeviceManager(this);
+            _drawSurface = drawSurface;
+            _parentForm = parentForm;
+            _surfacePictureBox = surfacePictureBox;            
+            graphics = new GraphicsDeviceManager(this);            
             Content.RootDirectory = "Content";
+
+            graphics.PreparingDeviceSettings += new EventHandler<PreparingDeviceSettingsEventArgs>(graphics_PreparingDeviceSettings);
+            Mouse.WindowHandle = _drawSurface;
+        }
+
+        private void graphics_PreparingDeviceSettings(Object sender, PreparingDeviceSettingsEventArgs evt)
+        {
+            evt.GraphicsDeviceInformation.PresentationParameters.DeviceWindowHandle = _drawSurface;
+
         }
 
         /// <summary>
@@ -41,6 +56,8 @@ namespace TeeGee
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+
+            this.IsMouseVisible = true;
 
             leftViewport = new Viewport();
             leftViewport.X = 0;
@@ -123,5 +140,6 @@ namespace TeeGee
             
             base.Draw(gameTime);
         }
+
     }
 }
