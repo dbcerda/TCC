@@ -44,8 +44,8 @@ namespace TeeGeeSim
             gameForm.VisibleChanged += new EventHandler(gameForm_VisibleChanged);
             gameForm.SizeChanged += new EventHandler(pictureBox_SizeChanged);
 
-            gameMang1 = new GameManager(new Rectangle(0, 0, 300, 300), GraphicsDevice);
-            gameMang2 = new GameManager(new Rectangle(360, 0, 300, 300), GraphicsDevice);
+            gameMang1 = new GameManager(new Rectangle(0, 0, 300, 300), graphics);
+            gameMang2 = new GameManager(new Rectangle(360, 0, 300, 300), graphics);
         }
 
         private void gameForm_VisibleChanged(object sender, EventArgs e)

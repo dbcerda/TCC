@@ -18,25 +18,38 @@ namespace TeeGeeSim
         private Character characterB;
         private Texture2D bgTexture;
         private Color bgColor;
+        private GraphicsDevice graphicsDevice;
 
-        public GameManager(Rectangle viewArea, GraphicsDevice graphicsDevice)
+        public GameManager(Rectangle viewArea, GraphicsDeviceManager graphicsDeviceManager)
         {
             this.viewArea = viewArea;
             characterA = new Character();
             characterB = new Character();
             AddChild(characterA);
             AddChild(characterB);
-            bgTexture = new Texture2D(graphicsDevice, 1, 1);
-            bgTexture.SetData(new Color[] { Color.White });
-            bgColor = new Color(1, 1, 1);
+            graphicsDeviceManager.DeviceCreated +=
+                new EventHandler<EventArgs>(graphics_DeviceReady);
+
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             base.Draw(gameTime, spriteBatch);
-            spriteBatch.Begin();
-            spriteBatch.Draw(bgTexture, viewArea, bgColor);
-            spriteBatch.End();
+            if (graphicsDevice != null)
+            {
+                spriteBatch.Begin();
+                spriteBatch.Draw(bgTexture, viewArea, bgColor);
+                spriteBatch.End();
+            }
+        }
+
+        public void graphics_DeviceReady(Object sender, EventArgs evt)
+        {
+            var graphicsDeviceManager = (GraphicsDeviceManager)sender;
+            graphicsDevice =  graphicsDeviceManager.GraphicsDevice;
+            bgTexture = new Texture2D(graphicsDevice, 1, 1);
+            bgTexture.SetData(new Color[] { Color.White });
+            bgColor = new Color(1, 1, 1);
         }
     }
 }
